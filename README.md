@@ -1,4 +1,4 @@
-# Riak on DotCloud #
+# RethinkDB on DotCloud #
 
 This project contains all the files necessary to launch a RethinkDB
 custom service on dotcloud. It's very much a work in progress! The
