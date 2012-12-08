@@ -9,6 +9,8 @@ build () {
     ar vx rethinkdb-*
     tar -xzvf data.tar.gz  
     echo Installing rethinkdb
+    cp usr/bin/rethinkdb ~/
+    cp -r usr/share/rethinkdb/web ~/
 }
 
 build

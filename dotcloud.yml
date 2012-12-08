@@ -5,5 +5,5 @@ rethinkdb:
         admin: http
         driver: tcp
         intracluster: tcp
-  process: rethinkdb
+  process: "rethinkdb --bind all --cluster-port $PORT_INTRACLUSTER --driver-port $PORT_DRIVER --http-port $PORT_ADMIN"
 
