@@ -13,12 +13,23 @@ The following does not work:
 * Using the Data Explorer in the Web UI
 * Scaling to multiple nodes
 * Authentication (anyone who knows the URL can access the server)
+* Automatically printing port information
 
 ## Usage ##
 
 ```
 git clone git://github.com/rethinkdb/rethinkdb-dotcloud.git
 dotcloud push rethinkdb rethinkdb-dotcloud
+```
+
+Then point your browser to the printed URL.
+
+If you'd like to get the host and ports for the client drivers, try
+the following:
+
+```
+dotcloud run rethinkdb
+env | grep DRIVER
 ```
 
 ## Using it in your app ##
